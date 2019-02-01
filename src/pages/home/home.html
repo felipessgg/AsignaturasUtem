@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="page1">
+
+  <div class="spacer" style="height:20;" id="home-spacer1"></div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>RAMO</ion-label>
+      <ion-select [(ngModel)]="selecRamo" (ngModelChange)="onChange($event)">
+          <ion-option *ngFor="let item of results">{{item.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="spacer" style="height:20;" id="home-spacer2"></div>
+
+  <ion-card>
+    <ion-card-header>RAMO: {{this.ramo}}</ion-card-header>
+    <ion-card-header>Grafico Estadistico</ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

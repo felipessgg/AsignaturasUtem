@@ -1,0 +1,33 @@
+
+<ion-content padding id="page1">
+
+  <div class="spacer" style="width:300px;height:20px;" id="login-spacer4"></div>
+
+  <h1 id="login-heading1" style="color:#000000;text-align:center;">
+    Iniciar Sesion
+  </h1>
+
+  <div class="spacer" style="width:288px;height:20;" id="login-spacer1"></div>
+
+  <img src="assets/img/7m9Xz4JQQeoMx3dOzqgw_Logoutem-1.png" style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;" />
+
+
+  <div class="spacer" style="width:288px;height:30;" id="login-spacer2"></div>
+
+    <ion-item id="login-input3">
+      <ion-label>Rut</ion-label>
+      <ion-input type="text" value="190342646" placeholder="12.345.678-9" [(ngModel)]="userData.rut"></ion-input>
+    </ion-item>
+
+    <ion-item id="login-input4">
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" value="utem2018" placeholder="**********" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+
+
+  <button id="login-button1" ion-button color="positive" (click)="login()" block>
+    ENTRAR
+  </button>
+  
+  <div class="spacer" style="height:20;" id="login-spacer5"></div>
+</ion-content>
