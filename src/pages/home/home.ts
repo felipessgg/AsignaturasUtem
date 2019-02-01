@@ -13,10 +13,8 @@ import chartJs from 'chart.js';
 export class HomePage {
 
     //INICIO VARIABLES GRAFICOS
-    @ViewChild('barCanvas') barCanvas;
     @ViewChild('lineCanvas') lineCanvas;
 
-    barChart: any;
     lineChart: any;
     //FIN VARIABLES GRAFICOS
 
